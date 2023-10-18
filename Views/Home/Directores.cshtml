@@ -1,0 +1,11 @@
+@model List<Director>
+<h1>Lista de Directores</h1>
+<ul>
+    @foreach (Director dir in @Model)
+    {
+        <li>@dir.Id @dir.Nombre @dir.Apellido</li>
+    }
+</ul>
+<a asp-asp-controller="Home" asp-action="FormularioDirector">
+    <button>Agregar Director</button>
+</a>
