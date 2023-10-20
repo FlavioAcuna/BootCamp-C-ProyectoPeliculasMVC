@@ -1,15 +1,29 @@
+@model Director
 <form action="/nuevo/director" method="post">
     <div>
-        <label for="Id">Id del director:</label>
-        <input type="number" id="Id" name="Id">
+        <label asp-for="Id">Id del director:</label>
+        <input type="number" asp-asp-for="Id">
+        <span asp-asp-validation-for="Id"></span>
     </div>
     <div>
-        <label for="Nombre">Nombre del director:</label>
-        <input type="text" id="Nombre" name="Nombre">
+        <label asp-for="Nombre">Nombre del director:</label>
+        <input type="text" asp-asp-for="Nombre">
+        <span asp-asp-validation-for="Nombre"></span>
     </div>
     <div>
-        <label for="Apellido">Apellido del director:</label>
-        <input type="text" id="Apellido" name="Apellido">
+        <label asp-for="Apellido">Apellido del director:</label>
+        <input type="text" asp-asp-for="Apellido">
+        <span asp-asp-validation-for="Apellido"></span>
+    </div>
+    <div>
+        <label asp-for="Email">Email del director:</label>
+        <input type="text" asp-asp-for="Email">
+        <span asp-asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="Password">password:</label>
+        <input type="password" asp-asp-for="Password">
+        <span asp-asp-validation-for="Password"></span>
     </div>
     <button class="btn btn-primary">Agregar</button>
 </form>

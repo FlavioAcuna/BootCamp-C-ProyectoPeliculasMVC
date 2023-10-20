@@ -1,0 +1,15 @@
+@model Director
+<form action="/procesa/login" method="post">
+
+    <div>
+        <label asp-for="Email">Email del director:</label>
+        <input type="text" asp-asp-for="Email">
+        <span asp-asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="Password">password:</label>
+        <input type="password" asp-asp-for="Password">
+        <span asp-asp-validation-for="Password"></span>
+    </div>
+    <button class="btn btn-primary">Login</button>
+</form>
